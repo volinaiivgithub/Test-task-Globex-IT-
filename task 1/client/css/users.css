@@ -1,0 +1,95 @@
+.users{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 64px;
+    max-width: 100%;
+}
+
+.users .search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.users .search input{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    padding-left: 24px;
+    padding-right: 62px;
+    border-radius: 24px;
+    font-size: 24px;
+    border: 1px solid var(--Blueberry, #D4DEFE);
+
+}
+
+.users .search img{
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+.users .list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(357px, 1fr));
+    gap: 24px 25px;
+    align-content: start;
+    align-items: start;
+}
+
+.users .list .user{
+    display: flex;
+    height: 314px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    background: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.users .list .user .name {
+    color: rgba(38, 44, 64, 1);
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.users .list .user .info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.users .list .user .info.phone::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    background: url("../images/phone.svg") no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.users .list .user .info.email::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    background: url("../images/email.svg") no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
